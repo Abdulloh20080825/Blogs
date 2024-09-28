@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JavaScript Performance Tips</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1 class="h1">JavaScript Performance Tips</h1>
+				<p>
+					Boost the speed and efficiency of your JavaScript code with these
+					expert tips and techniques.
+				</p>
+				<a href="#introduction" class="cta-button">Learn More</a>
+			</div>
+		</header>
+
+		<nav>
+			<ul class="navbar">
+				<li><a href="#introduction">Introduction</a></li>
+				<li><a href="#minification">Minification</a></li>
+				<li><a href="#async">Async & Defer</a></li>
+				<li><a href="#lazyLoading">Lazy Loading</a></li>
+				<li><a href="#eventDelegation">Event Delegation</a></li>
+			</ul>
+		</nav>
+
+		<section id="introduction">
+			<div class="container">
+				<h2>Introduction</h2>
+				<div class="content">
+					<img
+						src="https://stevesouders.com/images/withoutjs.png"
+						alt="JavaScript Performance"
+					/>
+					<p>
+						Performance is a crucial aspect of web development. Optimizing
+						JavaScript can lead to faster load times, better user experiences,
+						and improved scalability. Here’s how you can optimize your
+						JavaScript code for maximum performance.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="minification">
+			<div class="container">
+				<h2>Minify JavaScript</h2>
+				<div class="content">
+					<img
+						src="https://www.keycdn.com/img/support/minify-css.png"
+						alt="Minification"
+					/>
+					<p>
+						Minifying your JavaScript files reduces file size by removing
+						unnecessary characters, such as whitespace and comments, without
+						changing functionality. Tools like UglifyJS and Terser can automate
+						this process, resulting in faster load times.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="async">
+			<div class="container">
+				<h2>Use Async and Defer for Scripts</h2>
+				<div class="content">
+					<img
+						src="https://cdn.hashnode.com/res/hashnode/image/upload/v1628778723488/4u3BlRkTl.jpeg"
+						alt="Async and Defer"
+					/>
+					<p>
+						When including external JavaScript files, use
+						<strong>async</strong> or <strong>defer</strong> attributes to avoid
+						blocking the rendering of the page. Async loads the script
+						asynchronously, while defer ensures the script is executed after the
+						document is parsed.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="lazyLoading">
+			<div class="container">
+				<h2>Lazy Loading Resources</h2>
+				<div class="content">
+					<img
+						src="https://res.cloudinary.com/cloudinary-marketing/images/v1649718352/Web_Assets/blog/Lazy-Loading-Pillar_22162fb6d8/Lazy-Loading-Pillar_22162fb6d8-png?_i=AA"
+						alt="Lazy Loading"
+					/>
+					<p>
+						Lazy loading defers the loading of JavaScript and other resources
+						until they are needed. This can significantly reduce initial load
+						times and improve the perceived performance of your website.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="eventDelegation">
+			<div class="container">
+				<h2>Event Delegation</h2>
+				<div class="content">
+					<img
+						src="https://miro.medium.com/v2/resize:fit:1400/1*Gj3uY0HIJ4cBwntE2VGDPA.png"
+						alt="Event Delegation"
+					/>
+					<p>
+						Instead of attaching event listeners to multiple child elements,
+						attach a single listener to a parent element. This technique, known
+						as event delegation, reduces memory usage and improves performance
+						in applications with many interactive elements.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<p>© 2024 JavaScript Performance Tips</p>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
